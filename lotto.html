@@ -23,7 +23,7 @@
     </style>
 </head>
 <body>
-    <h1>로또</h1>
+    
     <button onclick="generateLottoNumbers()">번호</button>
     <div id="lottoNumbers"></div>
 
@@ -37,7 +37,7 @@
             }
 
             const sortedNumbers = Array.from(numbers).sort((a, b) => a - b);
-            document.getElementById('lottoNumbers').innerText = "번호: " + sortedNumbers.join(', ');
+            document.getElementById('lottoNumbers').innerText = " " + sortedNumbers.join('. ');
         }
     </script>
 </body>
