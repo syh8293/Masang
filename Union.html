@@ -10,6 +10,13 @@
             text-align: center;
             margin-top: 50px;
         }
+
+        button {
+            padding: 10px 20px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
         #lottoNumber {
             font-size: 24px;
             margin-top: 20px;
@@ -29,7 +36,7 @@
                 const randomNum = Math.floor(Math.random() * 10); // 0부터 9까지의 랜덤 숫자
                 lottoNumber += randomNum.toString();
             }
-            document.getElementById('lottoNumber').innerText = ' ' + lottoNumber;
+            document.getElementById('lottoNumber').innerText = ' ' + lottoNumber.join('. ');
         }
     </script>
 </body>
