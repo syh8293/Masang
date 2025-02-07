@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연금</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #lottoNumber {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="generateLottoNumber()">번호</button>
+    <div id="lottoNumber"></div>
+
+    <script>
+        function generateLottoNumber() {
+            // 연금복권 번호 생성 (6자리 숫자)
+            let lottoNumber = '';
+            for (let i = 0; i < 6; i++) {
+                const randomNum = Math.floor(Math.random() * 10); // 0부터 9까지의 랜덤 숫자
+                lottoNumber += randomNum.toString();
+            }
+            document.getElementById('lottoNumber').innerText = ' ' + lottoNumber;
+        }
+    </script>
+</body>
+</html>
