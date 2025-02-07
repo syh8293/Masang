@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또 번호 생성기</title>
+    <title>로또</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,7 +24,7 @@
 </head>
 <body>
     <h1>로또 번호 생성기</h1>
-    <button onclick="generateLottoNumbers()">로또 번호 생성</button>
+    <button onclick="generateLottoNumbers()">번호</button>
     <div id="lottoNumbers"></div>
 
     <script>
@@ -37,7 +37,7 @@
             }
 
             const sortedNumbers = Array.from(numbers).sort((a, b) => a - b);
-            document.getElementById('lottoNumbers').innerText = "생성된 로또 번호: " + sortedNumbers.join(', ');
+            document.getElementById('lottoNumbers').innerText = "번호: " + sortedNumbers.join(', ');
         }
     </script>
 </body>
